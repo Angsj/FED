@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8" />
+<title>Maakopdracht 2 formulier</title>
+<link rel="stylesheet" href="maakopdracht2.css">
+</head>
+<body>
+  <header>
+      <nav> 
+        <ul>
+          <li> <a href="maakopdracht2artikel.html">artikel</a></li>
+          <li> <a href="maakopdracht2formulier.html">formulier</a></li>
+        </ul>
+      </nav>
+  </header>
+  <section>
+    <h1>Aanmelden</h1>
+      <article>
+        <p>Bent u geinteresseerd in samenwerken met CMD Amsterdam? Dat kan! Tijdens de opleiding werken studenten aan projecten voor echte opdrachtgevers. Ook lopen de studenten stage, in het tweede en afstudeerjaar.</p>
+        <p><em>CMD Amsterdam zoekt altijd naar positieve verbindingen met de creatieve stad Amsterdam.</em></p>
+        <p>Voor het aanmelden van stageplekken of projecten kunt u onderstaand formulier invullen. Wij nemen zo nodig contact met u op nadat het formulier is verstuurd. Voor vragen of opmerkingen kunt u <a href="mailto:example@example.com">contact</a> met ons op.</p>
+      </article>
+      <article>
+        <form>
+
+          <fieldset>
+            <legend>CONTACTGEGEVENS</legend>
+              <ol>
+                <li>
+                    <label for="name">Naam</label>  
+                    <input type="text" id="name"/>
+                </li>
+                <li> 
+                    <label for="company">Bedrijf</label>
+                    <input type="text" id="company"/>
+                </li>
+                 
+                <li>  
+                    <label for="adres">Adres</label>
+                    <input type="text" id="adres" placeholder="Straatnaam en huisnr."/>
+                </li>
+                
+                <li>    
+                    <label for="zip">Postcode</label>
+                    <input type="text" pattern="[1-9][0-9]{3}\s?[a-zA-Z]{2}" id="zip"/>
+                </li>
+                <li>   
+                    <label for="place">Plaats</label>
+                    <input type="text" id="place"/>
+                </li>
+                <li>   
+                    <label for="tel">Telefoon</label>
+                    <input type="tel"  id="tel"/>
+                </li>
+                <li>    
+                    <label for="email">Email</label>
+                    <input type="email" id="email"/>
+                </li>
+              </ol>   
+          </fieldset>
+
+          <fieldset>
+            <legend>AANMELDEN </legend>
+
+            <ol> 
+              <li> 
+                  <label for="for">Ik wil mij aanmelden:</label>
+                    <select id="for">
+                      <option>Voor een stagebedrijf</option>
+                      <option>Voor een project</option>
+                    </select>
+                  </label>
+              </li>
+            </ol>
+
+          <fieldset>
+            <legend> STAGE</legend>
+            <ol> 
+              <li> 
+                  <label for="whichstudent">Geschikt voor</label>
+                    <select id="whichstudent">
+                      <option>tweedejaars studenten</option>
+                      <option>afstudeer studenten</option>
+                      <option>onbekend</option>
+                    </select>
+              </li>
+              <li>
+                  <label for="duration">Hoe lang is de stage?</label>
+                    <select id="duration">
+                      <option>10 weken</option>
+                      <option>20 weken</option>
+                    </select>
+              </li>
+              <li>
+                  <label for="date">Begindatum</label>
+                  <input type="date" id="date"/>
+              </li>
+              <li>   
+                  <label for="descriptionwork">Beschrijving werkzaamheden</label>
+                  <input type="text" id="descriptionwork"/>
+              </li>
+              <li>
+                  <label for="remark">Opmerking</label>
+                  <input type="text" id="remark"/>
+              </li>
+            </ol>
+
+            </fieldset>
+
+            <fieldset>
+              <legend>PROJECT</legend>
+              <ol>
+                <li>
+                    <label for="title">Titel</label>
+                    <input type="text" id="title"/>
+                </li>
+                <li>
+                    <label for="jobdescription">Opdrachtomschrijving</label>
+                    <input type="text" id="jobdescription"/>
+                </li>
+                <li>
+                    <label for="targetdescription">Doelgroepomschrijving</label>
+                    <input type="text" id="targetdescription"/>
+                </li>
+                <li>
+                    <label for="goal">Doelstelling/intentie van het project</label>
+                    <input type="text" id="goal"/>
+                </li>
+                <li>
+                    <label for="period">Looptijd</label>
+                    <input type="text" id="period"/>
+                </li>
+                <li>
+                    <label for="deadline">Telefoon</label>
+                    <input type="text"  id="deadline"/>
+                </li>
+                <li>
+                    <label for="whichstudent2">Geschikt voor</label>
+                    <select id="whichstudent2">
+                      <option>eerstejaars studenten</option>
+                      <option>tweedejaars studenten</option>
+                      <option>derdejaars studenten</option>
+                      <option>afstudeer studenten</option>
+                      <option>onbekend</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="remark2">Opmerking</label>
+                    <input type="text" id="remark2"/>
+                </li>
+              </ol>
+            </fieldset>
+          </fieldset>
+        </form>
+      </article>
+    </section>
+  <footer></footer>
+</body>
+</html>
