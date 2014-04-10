@@ -1,0 +1,149 @@
+/* standaard CSS */
+@charset "utf-8";
+
+
+* { 
+	margin:0;
+	padding:0;
+}
+
+nav {
+		background-color: pink;
+
+}
+
+nav ul li {
+	list-style: none;
+	display: inline-block;
+	max-width:60em;
+	min-width:29.5em;
+	text-align:center;
+}
+
+nav ul li a {
+		color: black;
+		font: 150%/1.5 georgia;
+}
+
+nav ul li a:hover {
+	color:purple;
+	font: 200%/1.5 georgia;
+	transition: font-size .5s linear 1s;
+}
+
+body {
+	background-image:url('candy.jpg');
+	font: 100%/1.5 georgia;
+	max-width: 60em;
+	margin: 0 auto;
+	color: #a60079;
+}
+section {
+	padding:2em;
+	background-color: #fff68e;
+}
+
+/* hier is de opmaak van het formulier*/
+
+fieldset {
+	border: 3;
+	border-radius: 1em;
+	box-shadow: 0 0 2em red;
+	padding: 1em;
+}
+fieldset + fieldset {
+	margin: 3em 0 0;
+}
+
+legend {
+	color:#ff00ba;
+	position: absolute;
+}
+
+
+legend + ol {
+	padding:2em 0 0;
+	list-style: none;
+}
+
+/* direct na een element wordt extra inhoud toegevoegd. */
+[for="name"]:after,
+[for="email"]:after {
+	content: " *";
+	color: red;
+}
+
+
+input {
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	font-size: 1.2em;
+	border-radius: .3em;
+	box-shadow: inset .1em .1em .2em rgba(400,0,0,.5);
+	border: none;
+	margin: .3em 0;
+	padding: .2em;
+}
+
+input:hover {
+	padding: .4em .2em;
+}
+input:focus {
+	box-shadow: inset .1em .1em .1em rgba(0,0,0,.0),
+				0 0 0 1px hsla(60,100%,50%,.6),
+				0 0 0 2px hsla(120,100%,50%,.6),
+				0 0 0 3px hsla(180,100%,50%,.6),
+				0 0 0 4px hsla(240,100%,50%,.6),
+				0 0 0 5px hsla(300,100%,50%,.6),
+				0 0 0 6px hsla(0,100%,50%,.6);
+	padding: .4em .2em;
+
+}
+
+form {
+	margin: 3em 0;
+}
+
+/* hier is de opmaak van het artikel*/
+
+/*Komt overeen met elke h1 element die een kind is van een section*/
+section > h1 {
+	font-size: 200%;
+	color:#ff00d8;
+	text-shadow: 0 0 .1em #ff00d8;
+}
+
+/*Komt overeen met elke h1 element, die een kind is van een header, die een kind is van een acticle, die een kind is van een section*/
+section > article > header > h1 {
+	font-size: 160%;
+	color:#ff58e5;
+	text-shadow: 0 0 .1em #ff58e5;
+}
+
+/*Komt overeen met elke p*/
+p {
+	padding-bottom: 1em;
+}
+
+/*Komt overeen met elk p element voorafgegaan door een broer of zus element p*/
+p + p {
+	color:red;
+}
+
+/*Komt overeen met elke derde p element, die een kind is van een acticle, die een kind is van een section*/
+section > article > p:nth-of-type(3)
+{
+background:pink;
+}
+
+/*Komt overeen met eerste letter van een p*/
+p:first-letter {
+color:FF7600;
+font-size: 1.5em;
+}
+
+/*Komt overeen met elke a*/
+a {
+	color:#a60079;
+}
