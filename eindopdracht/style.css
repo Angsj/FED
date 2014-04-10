@@ -1,0 +1,555 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/*0 alles ___________________________________________________________________*/
+
+body {
+	max-width: 1200px;
+	width: 100%;
+ 	font-family: "Helvetica", sans-serif;
+	font-size: 1em;
+	margin: 0 auto 0 auto;
+	line-height: 1.3em;
+	background-color: white;
+	color:#666666;
+
+}
+
+/*0 plaatje ____________________________________________________________________*/
+
+header img {
+	width: 45%;
+	max-width: 228px;
+	margin: 1em 0.5em;
+}
+
+
+/*0 algemeen ___________________________________________________________________*/
+ 
+section {
+    width:100%;
+}
+
+article {
+	width: 100%;
+	padding: 1em 0;
+}
+
+
+article > p > img {
+	width: 80%;
+}
+
+section > article > p > ul {
+	list-style: none;
+}
+
+
+/*0 tekst_____________________________________________________________________*/
+
+section > h1 {
+	margin-top: 1em;
+}
+
+article > header > h1 {
+	padding: 0.2em 0 0.5em 0;
+}
+
+article > header > h1:hover {
+	color:red;
+	font: 200%/1.5 Helvetica;
+	transition: font-size .5s linear 1s;
+}
+
+article h1:first-of-type{
+  color: #f16723;
+  font-size: 1.5em;
+  margin-top: 0em;
+}
+
+video {
+	width:100%;
+	max-width: 640px;
+	margin: 0 auto;
+}
+
+p {
+	text-align:justify;
+}
+
+section > article > p {
+	margin-bottom: 1em;
+}
+
+h2 {
+	margin-bottom: 1em;
+}
+
+/*0 link ____________________________________________________________________*/
+
+ol a {
+	font-size:0.8em;       
+	color:#f16723;
+}
+
+a{
+	font-size: 1em;
+	color:#f16723;
+	text-decoration: underline;
+}
+
+ol a:hover, a:hover {
+	text-decoration: none;
+}
+
+ 
+/*0 aside ____________________________________________________________________*/
+
+aside {
+  width: 100%;
+  font-size: 100%;
+  padding-top:2em;
+}
+
+aside section {
+	width: 100%;
+	margin: 0em;
+
+}
+
+aside section section {
+	padding-bottom:1em;
+	margin-bottom:1em;
+	border-bottom: thin solid #FFC3A5;
+}
+aside section section:last-of-type{
+	border-bottom:none;
+}
+
+aside > section > h1 > a {
+  color:#f16723;
+  font-size: 1.2em;
+  font-weight:bold;
+  text-decoration: none;
+}
+
+aside span {
+	font-size: 0.9em;
+	display: block;
+	margin-bottom: 0.5em;
+}
+
+aside > section + section {
+	margin-bottom:5em;
+	border-bottom: thick solid #FFC3A5;
+}
+
+aside > section:first-of-type{
+	border-bottom: thick solid #FFC3A5;
+}
+
+aside > section:last-of-type section > h2:last-of-type{
+	font-style: italic;
+	font-size: 1em;
+	font-weight:normal;
+
+}
+
+/* footer ____________________________________________________________________*/
+footer {
+	background-color: #f16723;
+	color: white;
+	padding: 1em;
+	font-size: 0.9em;
+}
+
+footer h1{
+	font-size: 1em;
+	margin-top: 1em;
+	margin-bottom: 0.2em;
+}
+
+footer ul {
+	list-style: none;
+} 
+
+footer a{
+	color:white;
+}
+
+
+
+/* 1 mobiel en ipad____________________________________________________________________*/
+@media (max-width:767px) {
+
+/*1 navigatie ___________________________________________________________________*/
+
+nav {
+	width:100%;
+	letter-spacing: 0.1em;
+}
+
+nav ul ul {
+	display: none;
+}
+
+nav ul li:hover  ul {
+	display: block;
+}
+
+nav ul li:focus  ul {
+	display: block;
+}
+
+nav ul {
+	padding: 0.2em;
+}
+
+nav li {
+	list-style:none;
+	padding:0.7em 0.5em;
+	background-color: #f16723;
+	margin-bottom: 5px;
+	border-bottom: 2px solid #A73800;
+}
+
+nav li li {
+	background-color: #FF9B69;
+}
+
+nav:first-of-type a {
+	color: white;
+	text-decoration: none;
+}
+
+/*1 artikel ___________________________________________________________________*/
+
+body > section  {
+	width:90%;
+	padding-left:5%;
+	padding-right:5%
+}
+
+/*1 aside ____________________________________________________________________*/
+
+aside  {
+	width:90%;
+	padding-left:5%;
+	padding-right:5%;
+}
+
+ul{
+	list-style: none;
+}
+
+/*1 formulier ____________________________________________________________________*/
+
+ol{
+	list-style: none;
+}
+
+section form {
+	width: 90%;
+	padding-left:5%;
+	padding-right:5%;
+	background-color:white;
+
+ }
+ 
+section fieldset {
+	width:80%;
+	border:none;
+	padding:1em;
+  	padding-top:1.5em;
+  	margin-bottom:0.3em;
+ }
+
+ section legend {  
+  color:#f16723;
+  position:relative;
+  top:1.25em;
+  left:-0.3em;
+  margin-bottom:1em;
+}
+
+section form > input:last-of-type{
+	width: 100%;
+	height:60px;
+	background-color:#f16723;
+	color:white;
+	font-weight:bold;
+	font-size:1em;
+	border-radius: 1em;
+	-webkit-border-radius: 1em;      
+	-moz-border-radius: 1em;
+	-o-border-radius:1em;
+	margin-bottom: 1em;
+	box-shadow:none;
+	border: none;
+}
+
+/*Opmaak van input type*/
+section input {
+	width:100%;
+	font-size: 1em;
+	box-shadow: inset 0.13em 0.13em 0.4em rgba(0,0,0,.5);
+	border: none;		
+	padding:1em;
+	float:inherit;
+}
+
+section label {
+  clear:both;
+  float:left;
+  color: black;
+  text-decoration: none; 
+}
+
+[for="name"]:after, 
+[for="company"]:after, 
+[for="adres"]:after,
+[for="zip"]:after,
+[for="place"]:after,
+[for="tel"]:after,
+[for="email"]:after,
+[for="title"]:after
+[for="jobdescription"]:after,
+[for="goal"]:after,
+[for="period"]:after,
+[for="deadline"]:after,
+[for="whichstudent2"]:after,
+[for="remark2"]:after,
+[for="whichstudent"]:after,
+[for="date"]:after,
+[for="descriptionwork"]:after,
+[for="remark"]:after,
+[for="duration"]:after {	
+  content: "*";
+  color:#f16723;;
+}
+
+
+
+}
+
+
+/* 2 desktop ____________________________________________________________________*/
+@media (min-width:768px) {
+
+
+/*2 navigatie ___________________________________________________________________*/
+
+nav {
+	width:100%;
+	letter-spacing: 0.1em;
+	box-shadow: 1px 1px 1px grey;
+}
+
+nav ul ul {
+	display: none;
+}
+
+nav ul li:hover  ul {
+	display: block;
+}
+
+nav ul li:focus  ul {
+	display: block;
+}
+
+
+nav ul {
+	background: #f16723;
+	list-style: none;
+	width: 100%;
+	margin: 0em auto;
+	position: relative;
+	display: inline-table;
+}
+
+
+nav ul li {
+	float: left;
+	padding-top:10px;
+	padding-bottom: 10px;
+	margin: 0em 1em;
+}
+	
+nav ul li a {
+	display: block; 
+	text-decoration: none;
+	color:white;
+}
+
+nav ul ul {
+	background-color:#FF8446;
+	padding: 0;
+	position: absolute; 
+	top: 100%;
+	width:20%;
+	border-top:5px solid white;
+
+}
+
+nav ul ul li {
+	float: none; 
+	position: relative;
+	padding-top:5px;
+	padding-bottom: 5px;
+	border-top:1px solid white;
+}
+
+nav ul ul li:first-of-type {
+	border-top:0px solid white;
+}
+
+nav ul ul li a {
+	color: #fff;
+
+}
+
+/*2 colum____________________________________________________________________*/
+
+section {
+    width: 50%;
+    margin-left: 1em;
+    float: left;
+    padding: 1em auto;
+}
+
+aside {
+	width: 30%;
+	font-size: 0.9em;
+	padding-right:5em;
+	float: right;
+}
+
+footer {
+	float:left;
+}
+
+footer ul li{
+	clear:left;
+	display:inline-block;
+}
+
+footer h1{
+	font-size: 1em;
+	margin-top: 0.5em;
+	margin-bottom: 0.2em;
+}
+
+ul{
+	list-style: none;
+}
+
+/*2 formulier ____________________________________________________________________*/
+
+ol{
+	list-style: none;
+}
+
+section form {
+	width: 90%;
+	padding-left:5%;
+	padding-right:5%;
+	background-color:white;
+
+ }
+ 
+section fieldset {
+	width:80%;
+	border:none;
+	padding:1em;
+  	padding-top:1.5em;
+  	margin-bottom:0.3em;
+
+
+ }
+
+ section legend {  
+  color:#f16723;
+  position:relative;
+  top:1.25em;
+  left:-0.3em;
+  margin-bottom:1em;
+}
+
+section form > input:last-of-type{
+	width: 100%;
+	height:60px;
+	background-color:#f16723;
+	color:white;
+	font-weight:bold;
+	font-size:1em;
+	border-radius: 1em;
+	-webkit-border-radius: 1em;      
+	-moz-border-radius: 1em;
+	-o-border-radius:1em;
+	margin-bottom: 1em;
+	box-shadow:none;
+	border: none;
+
+}
+
+/*Opmaak van input type*/
+section input {
+	width:100%;
+	font-size: 1em;
+	box-shadow: inset 0.13em 0.13em 0.4em rgba(0,0,0,.5);
+	border: none;		
+	padding:1em;
+	float:left;
+	display: inline;
+}
+
+section label {
+  clear:both;
+  float:left;
+  color: black;
+  text-decoration: none; 
+}
+
+[for="name"]:after, 
+[for="company"]:after, 
+[for="adres"]:after,
+[for="zip"]:after,
+[for="place"]:after,
+[for="tel"]:after,
+[for="email"]:after,
+[for="goal"]:after,
+[for="period"]:after,
+[for="deadline"]:after,
+[for="whichstudent2"]:after,
+[for="remark2"]:after,
+[for="whichstudent"]:after,
+[for="date"]:after,
+[for="descriptionwork"]:after,
+[for="remark"]:after,
+[for="duration"]:after {	
+  content: "*";
+  color:#f16723;;
+}
+
+
+/*2 footer ____________________________________________________________________*/
+
+footer h1 {
+	font-size: 1em;
+	margin-top: 0.5em;
+	margin-bottom: 0.2em;
+}
+
+
+
+}
+
+
+
+
+
+
+
+
